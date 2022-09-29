@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 1600px) {
+  .title{
+    flex-direction: column;
+  }
+
+  .title > h3{
+    display: flex;
+    justify-content: center;
+  }
+
+  .password-section{
+  }
+  
+  input[type="text"]{
+    flex: 1;
+  }
+
+  .generate-password-btn{
+    flex: 1;
+    margin-top: 1rem;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .title{
+    flex-direction: column;
+  }
+
+  .title > h3{
+    display: flex;
+    font-size: 4em !important;
+  }
+
+  .title > h3:nth-child(1){
+    justify-content: flex-start !important;
+  }
+
+  .title > h3:nth-child(2){
+    justify-content: center !important;
+  }
+
+  .title > h3:nth-child(3){
+    justify-content: flex-end !important;
+  }
+
+  .password-section{
+    flex-direction: column;
+  }
+  
+  input[type="text"]{
+    flex: 1;
+  }
+
+  .generate-password-btn{
+    flex: 1;
+    margin-top: 1rem;
+    margin-left: 0 !important;
+  }
+}
+
+hr{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.body-app{
+  background-color: #262626;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container{
+  width: 80%;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-section{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.generate-password-btn{
+  border: none;
+  border-radius: 20px;
+  background-color: #00C9FF;
+  color: white;
+  flex: 1 1 20%;
+  padding: 1rem .5rem;
+  margin-top: 1rem;
+}
+
+h3{
+  font-weight: 800;
+  font-size: 6em;
+  color: white;
+}
+
+.gradient{
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0px;
+}
+
+.options-toolbox{
+  display: flex;
+  flex-direction: column;
+  background-color: #3a3a3a;
+  color: white;
+  border-radius: 20px;
+}
+
+div.slider-input, div.checkbox-input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+input[type="text"]{
+  border: 0;
+  flex: 1 1 80%;
+  color: #585858;
+  border-radius: 20px;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+input[type="checkbox"]{
+  color:#00C9FF;
+}
+
+.password-input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.copy-btn{
+  cursor: pointer;
+}
+
+.copy-btn[disabled]{
+  color: #3a3a3a !important;
+}
